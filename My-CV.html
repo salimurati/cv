@@ -4,6 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .box {
+        background-color: bisque;
+        color: white;
+      }
+      #textarea {
+        background-color: bisque;
+        width: 290px;
+      }
+      .edukimi {
+        background-color: antiquewhite;
+      }
+      .eksperienca {
+        background-color: antiquewhite;
+        font-size: 19px;
+      }
+      a:hover {
+        color: red;
+      }
+      a {
+        color: white;
+      }
+      .email {
+        width: 300px;
+        border: 0px;
+        color: blue;
+        border-bottom: 3px solid blue;
+      }
+      .dergo {
+        border: none;
+        width: 290px;
+        border-bottom: 3px solid blue;
+        background-color: white;
+        color: blue;
+      }
+      .label {
+        color: blue;
+      }
+    </style>
   </head>
   <body>
     <table
@@ -13,9 +52,9 @@
       cellspacing="0"
       border="0"
     >
-      <tr height="400" align="center" valign="top">
+      <tr class="box" height="400" align="center" valign="top">
         <td width="33.3%" rowspan="3">
-          <img src="./img/salih.jpg.jpg" width="150px" height="261px" />
+          <img src="./img/salih.jpg.jpg" width="150px" height="259px" />
 
           <hr />
           <h3>Data e lindjes</h3>
@@ -36,18 +75,20 @@
           </form>
           <hr />
           <h4>Me kontakto</h4>
-          <label for="">Email:</label><br />
+          <label class="label" for="">Email:</label><br />
           <input
             type="email"
             name=""
             placeholder="Email"
             id=""
             required
+            class="email"
           /><br />
-          <label for="">Komento:</label><br />
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button type="submit">Dergo</button>
+          <label class="label" for="">Komento:</label><br />
+          <textarea name="" id="textarea" cols="30" rows="10"></textarea><br />
+          <button type="submit" class="dergo">Dergo</button>
         </td>
+
         <td width="100px">
           <h1>Sali Murati</h1>
           <p>Emri dhe Mbiemri</p>
@@ -86,7 +127,8 @@
           <hr />
         </td>
       </tr>
-      <tr height="200" valign="top">
+
+      <tr class="edukimi" height="200" valign="top">
         <td colspan="2">
           <h3 align="center">Edukimi</h3>
           <ul>
@@ -109,7 +151,7 @@
           <hr />
         </td>
       </tr>
-      <tr height="300" valign="top left">
+      <tr class="eksperienca" height="300" valign="top left">
         <td>
           <h5>Eksperienca ne pun</h5>
           <ol>
