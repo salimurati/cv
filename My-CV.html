@@ -4,20 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet"/>
+
+
+     <table class="table">
     <style>
       .box {
-        background-color: bisque;
-        color: white;
+        background-color: rgb(96, 96, 230, 0.1);
       }
       #textarea {
-        background-color: bisque;
+        border-radius: 10px;
         width: 290px;
+        border-color: lightgray;
       }
       .edukimi {
-        background-color: antiquewhite;
       }
       .eksperienca {
-        background-color: antiquewhite;
         font-size: 19px;
       }
       a:hover {
@@ -28,19 +31,25 @@
       }
       .email {
         width: 300px;
-        border: 0px;
-        color: blue;
-        border-bottom: 3px solid blue;
+        border: 1px solid lightgray;
+        padding: 5px;
+        border-radius: 10px;
       }
       .dergo {
         border: none;
         width: 290px;
-        border-bottom: 3px solid blue;
-        background-color: white;
-        color: blue;
+        color: white;
+        background-color: dodgerblue;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
       }
       .label {
-        color: blue;
+        color: rgb(10, 10, 10);
+      }
+      .adres {
+        background-color: rgb(96, 96, 230, 0.1);
+        font-style: italic;
       }
     </style>
   </head>
@@ -52,8 +61,8 @@
       cellspacing="0"
       border="0"
     >
-      <tr class="box" height="400" align="center" valign="top">
-        <td width="33.3%" rowspan="3">
+      <tr height="400" align="center" valign="top">
+        <td class="box" width="33.3%" rowspan="3">
           <img src="./img/salih.jpg.jpg" width="150px" height="259px" />
 
           <hr />
@@ -74,22 +83,25 @@
             <progress value="50" max="100"></progress>
           </form>
           <hr />
-          <h4>Me kontakto</h4>
-          <label class="label" for="">Email:</label><br />
-          <input
-            type="email"
-            name=""
-            placeholder="Email"
-            id=""
-            required
-            class="email"
-          /><br />
-          <label class="label" for="">Komento:</label><br />
-          <textarea name="" id="textarea" cols="30" rows="10"></textarea><br />
-          <button type="submit" class="dergo">Dergo</button>
+          <form action="">
+            <h4>Me kontakto</h4>
+            <label class="label" for="">Email:</label><br />
+            <input
+              type="email"
+              name=""
+              placeholder="Email"
+              id=""
+              required
+              class="email"
+            /><br />
+            <label class="label" for="">Komento:</label><br />
+            <textarea name="" id="textarea" cols="30" rows="10"></textarea
+            ><br />
+            <button type="submit" class="dergo">Dergo</button>
+          </form>
         </td>
 
-        <td width="100px">
+        <td class="adres" width="100px">
           <h1>Sali Murati</h1>
           <p>Emri dhe Mbiemri</p>
           <h5>Rreth meje</h5>
@@ -105,7 +117,7 @@
           ><br /><br /><br />
           <hr />
         </td>
-        <td style="min-width: 260px">
+        <td class="adres" style="min-width: 260px">
           <address>
             <h4>Adresa</h4>
             <strong
@@ -128,7 +140,7 @@
         </td>
       </tr>
 
-      <tr class="edukimi" height="200" valign="top">
+      <tr class="edukimi adres" height="200" valign="top">
         <td colspan="2">
           <h3 align="center">Edukimi</h3>
           <ul>
@@ -152,7 +164,7 @@
         </td>
       </tr>
       <tr class="eksperienca" height="300" valign="top left">
-        <td>
+        <td class="adres">
           <h5>Eksperienca ne pun</h5>
           <ol>
             <li>Web developer</li>
@@ -164,12 +176,16 @@
           </ol>
           <a href="#">Informohu me shum</a>
         </td>
-        <td>
+        <td class="adres">
           <h5>Gjuhent qe i flas</h5>
           <ul>
-            <li>Anglishten</li>
-            <li>Shqipen</li>
-            <li>Serbishten</li>
+            <li>
+              Anglishten
+
+              <span class="flag-icon flag-icon-us"></span>
+            </li>
+            <li>Shqipen    <span class="flag-icon flag-icon-al"></span></li>
+            <li>Serbishten    <span class="flag-icon flag-icon-al"></span></li>
           </ul>
           <h5>Hobit</h5>
           <ul>
